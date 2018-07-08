@@ -1,0 +1,25 @@
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.8.0/lib/webcomponentsjs/webcomponents-lite.js">
+<link rel="import" href="https://raw-dot-custom-elements.appspot.com/Redbility/paper-carousel/1.2.5/paper-carousel/paper-carousel.html">
+<dom-module id="pic-view">
+    <template>
+        <style is='custome-style'>
+            .container {
+                max-height: 600px;
+                max-width: 600px;
+            }
+        </style>
+        <div class='container'>
+            <paper-carousel items="1" dotText="false">
+                <img src="pics/puzzled_lady.png" draggable="false" />
+                <img src="pics/couple.png" draggable="false" />
+            </paper-carousel>
+        </div>
+    </template>
+    <script>
+        Polymer({
+            is: "pic-view",
+            properties: {
+            },
+        });
+    </script>
+</dom-module>

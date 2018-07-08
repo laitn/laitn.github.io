@@ -1,0 +1,138 @@
+---
+layout: my_post
+title:  "使用Firebase搭建大规模应用"
+date:   2017-09-01 23:35:00 -0700
+categories: 
+permalink: /firebase/app/2017/09/01/firebase.html
+---
+
+[Firebase](https://firebase.google.com/)是Google Cloud Platform为应用开发者们（特别是全栈开发）推出的应用后台服务。借助Firebase，应用开发者们可以快速搭建应用后台，集中注意力在开发client上，并且可以享受到Google Cloud的稳定性和scalability。
+
+Firebase为后台开发提供以下几个功能：
+
+* 实时数据库（Realtime database）
+* 用户认证（Authentication）
+* 自定义API（Cloud function）
+* 消息推送（Cloud messaging）
+* 静态网页Hosting
+* 云存储（Cloud storage）
+
+下面分别介绍一下每个功能
+
+#### **实时数据库（Realtime database）**
+
+实时数据库是Firebase提供的核心功能。通过为Android， iOS跟Web（JavaScript）提供SDK，前端开发者们可以轻松的读写Firebase的数据库（no-SQL，Json）。以下是client Web SDK中读写数据库的代码例子：
+
+{% highlight bash %}
+// 更新用户信息（username， email）记录到/users表
+// userId是为用户表的"主键"
+firebase.database().ref('users/' + userId).set({
+    username: name,
+    email: email,
+});
+{% endhighlight %}
+
+实时数据库中的另一个关键字是实时。开发者可以利用SDK在client中监听数据库的变化，并实时获得结果：
+
+{% highlight bash %}
+// /messages表发生变化执行function
+firebase.database().ref("messages/").on('value', function(dataSnapshot) {
+  ...
+});
+// /messages表添加纪录执行function
+firebase.database().ref("messages/").on('child_added', function(childSnapshot, prevChildKey) {
+  ...
+});
+...
+{% endhighlight %}
+
+实时数据库也有Authorization，可以在firebase console中通过一个Json文件轻松设置：
+
+{% highlight bash %}
+// /users表中每个用户只可以修改自己的信息 （uid来自Firebase另一个功能，下面会介绍）
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}
+{% endhighlight %}
+
+#### **用户认证（Authentication）**
+
+Firebase提供了基于email的用户认证。通过client SDK，开发者可以轻松的实现账户注册，登陆登出，修改密码，忘记密码等常用功能。并且可以轻松集成3rd party Authentication方式（Google Signin，Facebook Login，Github，Twitter）以及任何customize的认证服务。支持手机号登陆，短信功能。client代码案例：
+
+{% highlight bash %}
+// 注册新账户
+firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+});
+// 账户登陆
+firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+});
+// 认证信息更新监听（认证成功，认证失效，密码更改）
+firebase.auth().onAuthStateChanged(function(user) {
+});
+...
+{% endhighlight %}
+
+在Firebase server端，可以与Cloud function（下面会详细介绍）集成，实现例如新用户注册后发送verification邮件等功能。Server代码案例：
+
+{% highlight bash %}
+// 账户创建监听
+exports.sendWelcomeEmail = functions.auth.user().onCreate(event => {
+});
+// 账户删除监听
+exports.sendByeEmail = functions.auth.user().onDelete(event => {
+});
+{% endhighlight %}
+
+{% include adsense-article1.html %}
+
+#### **自定义API（Cloud function）**
+
+Cloud function相当于Firebase提供的一个node.js的server附加Firebase与其他功能的集成（例如上面与Authentication集成的案例），与Amazon AWS的[lambda](https://aws.amazon.com/lambda/)有异曲同工之妙。通过Cloud function，开发者可以自己定义cloud API，将原本client的部分功能迁移到server端，轻量化client。该功能在密集迭代中，相信未来会提供更多与Google产品的集成。
+
+#### **消息推送（Cloud messaging）**
+
+Firebase提供了消息推送功能。通过client side SDK产生token注册至firebase服务器，并自动监听任何消息推送。开发者或者管理者可以在任何地方（服务器或者个人电脑）对任何一个device发送推送消息，提高engagement。以下client代码案例：
+
+{% highlight bash %}
+// 初次请求用户允许推送消息
+messaging.requestPermission().then(function() {
+
+}).catch(function(err) {
+
+});
+// 获得token并自动注册至cloud messaging服务器
+messaging.getToken().then(function(currentToken) {
+});
+// 定期刷新token
+messaging.onTokenRefresh(function() {
+});
+{% endhighlight %}
+
+#### **静态网页Hosting**
+
+顾名思义，Firebase提供了最基本的web hosting功能。对于web应用开发者来说提供了极大的便利，client的代码不需要另外host，而与Firebase API server共同host在Google Cloud中，提供了效率，降低了成本。Firebase会为web hosting提供一个免费的hostname，允许开发者可以随意更换为任何自己拥有的hostname。
+
+#### **云存储（Cloud storage）**
+
+Firebase除了通过实时数据库对structured数据的支持，还通过云存储来提供上传下载大文件（blob file）。通过下面client代码案例来说明开发者如何操作云存储（上传为例）：
+
+{% highlight bash %}
+// 上传文件file到云存储的images/rivers.jpg位置
+var uploadTask = storageRef.child('images/rivers.jpg').put(file);
+// 监听上传任务的状态（进度，完成，异常等）
+uploadTask.on('state_changed', function(snapshot){
+})
+// 暂停上传
+uploadTask.pause();
+// 继续上传
+uploadTask.resume();
+// 取消上传
+uploadTask.cancel();
+{% endhighlight %}
+

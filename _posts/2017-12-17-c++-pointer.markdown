@@ -1,0 +1,101 @@
+---
+layout: my_post
+title:  "c++指针难以理解？那你听说过智能指针吗？"
+date:   2017-12-17 18:01:00 -0700
+categories: 
+permalink: /programming/c++/pointer/2017/12/17/c++-pointer.html
+---
+
+对于初级计算机编程语言学习者来说，c与c++当中的指针是一个不折不扣的门槛。变量前面加了"&"与"\*"理解起来就复杂了百倍。那么有多少人知道unique_ptr是什么意思？今天我就来梳理一下c指针的一些有趣知识点。
+
+### 基本知识点
+
+首先，先来重温一下指针的基本知识。为了保证文章的一致性和易读性，我们先定义一下一个类:
+
+{% highlight cpp %}
+class Laitn {
+ public:
+  Laitn() {}
+  ~Laitn() {}
+  getA() {
+    return A;
+  }
+  setA(int a) {
+    A = a;
+  }
+ private:
+  int A;
+};
+{% endhighlight %}
+
+那么定义一个指针的方法如下:
+
+{% highlight cpp %}
+Laitn *laitn = new Laitn();
+{% endhighlight %}
+
+可以读作"生成了一个laitn指针指向一个Laitn类的对象"。访问指针对象使用->符号：
+
+{% highlight cpp %}
+laitn->setA(1);
+std::cout << laitn->getA(); // 输出1
+laitn->setA(2);
+std::cout << laitn->getA(); // 输出2
+{% endhighlight %}
+
+指针也可以赋值：
+
+{% highlight cpp %}
+Laitn *laitnp;
+laitnp = laitn;
+std::cout << laitn->getA(); // 输出2
+{% endhighlight %}
+
+指针本身也可以作为参数传入函数:
+
+{% highlight cpp %}
+void laitn_func(Laitn* laitn) {
+    std::cout <<laitn->getA(); // 输出2
+}
+...
+laitn_func(laitn);
+...
+{% endhighlight %}
+
+### 智能指针
+
+自从c++11标准之后，加入了智能指针（smart pointer）的概念。该概念的引入很大程度上减少错误使用内存而导致的内存泄露。智能指针实现中两个关键词是std::unique_ptr与std::shared_ptr。
+
+std::unique_ptr顾名思义就是“指向某对象的唯一指针”。unique_ptr的生成方式如下：
+
+{% highlight cpp %}
+std::unique_ptr<Laitn> unique_laitn = std::make_unique<Laitn>();
+{% endhighlight %}
+
+以上的智能指针的代码利用了c++ template，类似于Java当中的generics。可以理解为unique_ptr与make_unique的通过template实现为一个模板，可以用来生成任意类的unique_ptr。
+
+与普通指针相比，unique_ptr不允许赋值操作，也不允许通过new来直接初始化。以下的操作是通不过编译的：
+
+{% highlight cpp %}
+std::unique_ptr<Laitn> unique_laitnp = unique_laitn; // 编译失败，禁止直接赋值
+...
+void laitn_func(unique_ptr<Laitn> unique_laitn) {
+    std::cout << unique_laitn->getA();
+}
+...
+laitn_func(unique_laitn); // 编译失败，禁止作为函数参数直接传指针
+{% endhighlight %}
+
+通过这些操作，严格保证了只有一份Laitn对象的拷贝，并且只有unique_laitn指向它。如果确实需要赋值以及作为参数传递该怎么做？可以通过std::move(),所以以下操作是允许的:
+
+{% highlight cpp %}
+std::unique_ptr<Laitn> unique_laitnp(std::move(unique_laitn)); // unique_laitn将不再指向任何对象，原先指向的对象转移给unique_laitnp。
+...
+void laitn_func0(unique_ptr<Laitn> unique_laitn) {
+    std::cout << unique_laitn->getA();
+}
+...
+laitn_func0(std::move(unique_laitn)); // unique_laitn将不再指向任何对象，原先指向的对象转移给函数laitn_func的参数。
+{% endhighlight %}
+
+而std::shared_ptr的使用则自由了许多，与基本指针的使用基本类似，赋值传参数等也被允许。

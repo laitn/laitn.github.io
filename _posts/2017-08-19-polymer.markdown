@@ -1,0 +1,66 @@
+---
+layout: my_post
+title:  "从零到一百，polymer网页应用"
+date:   2017-08-19 20:05:00 -0700
+categories: 
+permalink: /web/app/polymer/frontend/2017/08/19/polymer.html
+---
+
+Polymer（[polymer-project.org](https://www.polymer-project.org/)）是最初由Google发起的一个Web UI开源项目。目前版本2.0，全面支持Google的质感设计原则（material design）。Google大部分最新产品都使用了polymer，包括Youtube，Play Music, Allo, Android平台以及Chrome OS平台。
+
+Polymer的安装使用包管理工具npm (nodejs的官方包管理工具)。[安装步骤](https://www.polymer-project.org/2.0/start/install-2-0)如下：
+
+{% highlight bash %}
+$ npm install -g polymer-cli #安装Polymer CLI
+$ mkdir myproject #创建项目文件夹
+$ cd myproject
+$ ... 创建index.html ...
+$ polymer serve #启动本地调试服务器, 在浏览器中通过127.0.0.1:xxxx访问该项目
+{% endhighlight %}
+
+Polymer的一般用法是创建一个新的html文件，使用javascript定义一个组件（web component），在其他网页中包含该组件从而实现模块的复用（reuse）。一个简单的组件如下所示（需要注意的是为了简单起见，所有polymer的库原代码都直接通过http直接引入，从而避免下载polymer库文件到本地项目）：
+
+my-new-view.html:
+{% highlight js %}
+<!-- 加载Polymer.Element 基类 -->
+<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.8.0/lib/polymer/polymer-element.html">
+
+<dom-module id="my-new-view">
+  <!-- 定义元素的css style 和 local DOM -->
+  <template>
+    <style>
+      :host {
+        display: block;
+        padding: 16px;
+      }
+    </style>
+
+    <h1>新的web组件</h1>
+  </template>
+  <script>
+    // 定义web组件的类（extends Element基类）
+    class MyNewView extends Polymer.Element {
+      static get is() { return 'my-new-view'; }
+    }
+    // 注册该类
+    customElements.define(MyNewView.is, MyNewView);
+  </script>
+</dom-module>
+{% endhighlight %}
+
+在其他任何网页中可引用上述组件html文件，并直接使用该新组件：
+
+index.html:
+{% highlight js %}
+<html>
+<head>
+    <script src="https://cdn.rawgit.com/download/polymer-cdn/1.8.0/lib/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="my-new-view.html">
+</head>
+<body>
+    <my-new-view></my-new-view>
+</body>
+</html>
+{% endhighlight %}
+
+Polymer通过这种高度复用的模块化设计，最大程度的提高了前端（frontend）web开发者的工作效率。在创建模块的时候，开发者可以利用同样的思想来直接引用现成的组件。[webcomponents.org](https://www.webcomponents.org/)为组件开发者们提供了大量现成的组件。其中[PolymerElements](https://www.webcomponents.org/author/PolymerElements)提供了大量原生Polymer组件，基本涵盖了UI设计中的所有元素，其中的[paper-elements](https://www.webcomponents.org/collection/PolymerElements/paper-elements)实现了Google最新的质感设计。

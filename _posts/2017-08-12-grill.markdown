@@ -1,0 +1,51 @@
+---
+layout: my_post
+title:  "公园烧烤攻略"
+date:   2017-08-12 17:55:00 -0700
+categories:
+permalink: /lifestyle/bbq/grill/2017/08/12/grill.html
+---
+
+自从去年夏天去温哥华的[木屋炭烤](https://www.google.com/maps/place/Happy+Tree+House+BBQ+Richmond+%E6%9C%A8%E5%B1%8B%E7%A2%B3%E7%83%A4/@49.1790207,-123.1335666,15z/data=!4m5!3m4!1s0x0:0x3131731315c97bb6!8m2!3d49.1790207!4d-123.1335666) 撸串，就对炭烤心心念念。之后回国一段时间，去了几家口碑好的烧烤店，但是都没有在happy tree吃的那么过瘾。后来周末晚上去想去吃湾区著名的[TIT BBQ 汤司令](https://www.google.com/maps/place/TIT+BBQ+%E6%B1%A4%E5%8F%B8%E4%BB%A4/@37.5222192,-122.0043298,15z/data=!4m5!3m4!1s0x0:0x96bc66364b8f97d4!8m2!3d37.5222192!4d-122.0043298)， 要等位超过一个小时。终于忍无可忍，决定自己去公园烧烤。
+
+首先是选址，定在了我们每周都去hiking的公园。离停车场比较近的地方，有一片很大一片的草地，很开阔，通风好，适合野餐；而且有桌椅，公用的烧烤架，水龙头，可以用来放置设备或者做一些准备工作。最重要的是，吃完之后可以去hiking，负担不是很大。
+
+选好了地点，我们就开始着手选购设备。 以下就是我们为这次烧烤买的装备：
+* 烤炉
+因为要炭烤，所以最为重要的就是烤炉。我们买了常见的[Weber Portable Grill](https://www.amazon.com/gp/product/B00004RALL/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1)（Weber品牌是碳烤界的苹果）。
+* 木炭
+为了做出原汁原味的碳烤来，木碳选择了非助燃碳[Kingsford Original Charcoal Briquettes](https://www.amazon.com/Kingsford-Original-Charcoal-Briquettes-Pound/dp/B01IUJ2HV2/ref=sr_1_4?s=lawn-garden&ie=UTF8&qid=1502584213&sr=1-4&keywords=kingsford)。非助燃碳价格便宜些相较于助燃碳，但烧烤的味道更加因为没有助燃剂影响烧烤的味道（据说是煤油的味道）。
+	
+* 助燃烟囱
+由于使用了非助燃碳，需要助燃烟囱来帮助点火，楼主选购了[Weber Chimney Starter助燃烟囱](https://www.amazon.com/gp/product/B009IH0ICG/ref=oh_aui_detailpage_o03_s01?ie=UTF8&psc=1)（随后介绍助燃烟囱的用法）
+* 助燃cube
+顺手买了[助燃cube](https://www.amazon.com/dp/B001AN7RGG),也就是固体酒精,放在烟囱下面点燃木炭， 网上有人说可以直接用旧报纸代替，但是烧的时候会烟比较大，气味刺鼻。
+
+* Grill Set
+烧烤工具购买了[Cuisinart Stainless-Steel Grill Set](https://www.amazon.com/gp/product/B002XQ2D8Q/ref=oh_aui_detailpage_o01_s01?ie=UTF8&psc=1),但后来证明其中有些用不上。
+
+* 手套
+为了保证烧烤时不被烫伤，斥巨资买了[烧烤专用手套](https://www.amazon.com/gp/product/B00RUBZNDQ/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)。
+
+* 保温箱和冰袋
+保温箱买了[Coleman Personal Cooler](https://www.amazon.com/dp/B001EN059I), 大小刚好够两人份。保温箱的效果很好。还顺便买了[冰袋](https://www.amazon.com/dp/B003FO2B5U)。保温效果非常好，我们上午10点左右出发，到下午5点多回家，冰袋还没有完全化掉，里面的的肉肉还是冰冰的。
+
+下面就是准备食材了。周五的时候，我们去了趟超市，买了羊排，牛肉，鸡翅，还有蔬菜，调料。还有1 Gallon的zip bag，回家之后直接把肉肉放到里面，加一点黑胡椒等调料，然后放在冰箱冷藏室里就好了，去烧烤的时候直接拿出来放到保温箱里。
+
+准备了一个星期，周末我们就去公园烧烤了。选了一个靠近停车场的位置，把设备拖过去，然后就开始生火了。利用助燃烟囱把碳完全燃烧。
+
+![zhuranyancong]({{ site.url }}/assets/grill_zhuranyancong.jpg)
+
+在助燃烟囱内装满碳块，底部放上cube，点燃，火苗很高，引燃底部的碳块。碳块开始冒烟，并且由下往上引燃所有碳块。大约20分钟后，冒烟开始减少，并且最上层的碳块也成灰色。碳块已完全燃烧了。下一步就是把烧好的碳倒入烤炉中了。
+
+![tanready]({{ site.url }}/assets/grill_tanready.jpg)
+
+碳块应当均匀分布在烤架上，并且留出一部分空地来作为低温区（道理如同火锅中的鸳鸯锅）。碳准备完毕就可以开始加入食材了。
+
+![meatongrill]({{ site.url }}/assets/grill_meat_on_grill.jpg)
+
+羊排跟牛肉块靠近高温区域，可以熟的快一些。鸡翅鸡腿靠近低温区域，先预热一下。一个小技巧是关于锅盖的。不盖锅盖烤会冒烟更多且容易起明火（羊油引起的），这时肉的外部会容易变色些，而内部熟的慢一些。盖锅盖的话不易起明火，外部容易看上去不熟，但内部熟的更加快速。
+
+等到外皮烤至金黄，就可以开吃了！从来没有吃过这么好吃的鸡翅，好吃到cry。
+
+![meatdone]({{ site.url }}/assets/grill_meat_done.jpg)

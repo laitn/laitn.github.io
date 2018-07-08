@@ -1,0 +1,90 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #c7e5f9;
+}
+
+a:hover, a:focus, a:active { 
+	text-decoration: none;
+}
+
+body { 
+    margin: 0; 
+	padding: 0;
+    font: 100% verdana, sans-serif, arial;
+}
+
+#nav {
+	width: 100%;
+	position: fixed;
+    background-color: #ced3db;
+    padding: 10px 0 10px 0;
+}
+
+#nav #product{
+    float:left;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+}
+
+#nav ul li {
+    float: right;
+    margin: 0px 10px 0px 10px;
+}
+
+#middle {
+    text-align: center;
+    padding: 50px 0 0 0;
+    background-color: #6e8dbf;
+}
+
+#middle #startpad {
+    background-color: #e8eaed;
+    margin: 0 40% 0 40%;
+    padding: 5px 0 5px 0;
+}
+
+#middle #startpad:hover, #middle #startpad:focus, #middle #startpad:active {
+    background-color: #2cddc0;
+    margin: 0 30% 0 30%;
+    padding: 10px 0 10px 0;
+}
+
+#third{
+    padding: 10px 0 0 0;
+    align-items: center;
+    display: flex;
+}
+
+#third .piece {
+    flex: 1;
+    margin: 0 10px 50px 10px;
+    padding: 5% 0 5% 0;
+    background-color: #66b4e8;
+}
+
+#last{
+    margin: 0;
+    padding: 0 10px 10px 10px;
+}
+
+#last #copyright{
+    float: left;
+}
+
+#last ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+}
+
+#last ul li {
+    float: right;
+    padding: 0 10px 0 0;
+}

@@ -1,0 +1,23 @@
+---
+layout: my_post
+title:  "Redfin - 重新定义美国房地产行业"
+date:   2017-08-18 20:58:00 -0700
+categories: 
+permalink: /internet/real-estate/app/2017/08/18/redfin.html
+---
+
+Redfin企图通过互联网技术，将美国的房地产行业（real estate）转移到线上，重新定义房产经纪这个行业。
+
+Redfin成立于2004年，总部位于美国西雅图。现任CEO（co-founder）是Glenn Kelman，于90年代初毕业于加州大学伯克利分校，在帮助创立其第一家公司Plumtree Software之前，曾在另一家创业公司从事过两年的产品经理职位。2004年于另外两位合伙人一起创立Redfin，并于次年担任该公司CEO。Redfin总共经历过10轮融资，最后一次公开披露数据2014年底融资7100万美金（71M），最终于2017年7月28日以每股15美元的价格提供923万股（总价值1.38亿美元）在纳斯达克（NASDAQ）上市，代号RDFN。根据Redfin上市的prospectus，Redfin的服务器位于西雅图的某数据中心（并没有在另一个区域设立冗余服务器），然而Redfin曾是[Amazon AWS的经典案例](https://aws.amazon.com/solutions/case-studies/redfin/).
+
+Redfin的任务是帮助用户简单化买房卖方的步骤，降低用户成本。与其他线上房产信息服务Trulia，Zillow，Realtor.com相比，Redfin的主要区别点是在提供房产信息的同时也提供了房产经纪的服务（brokerage）。Redfin在每个地区最大的竞争者就是当地的房产经纪公司，而其他线上服务则采取与线下房产经纪公司合作而避免进入房产经纪市场。CEO Glenn Kelman在IPO之后接受采访表示，Redfin之于房地产行业就如同苹果之于高科技行业。的确如此，通过提供房产全程服务，可以最大程度优化整个交易过程。正如苹果提供硬件、操作系统、外观设计以及应用程序全套系统，高度整合来提供一体化的用户体验。从Redfin的网站以及手机app上就可以体现出来这点，界面及其简洁。
+
+{% include adsense-article1.html %}
+
+资本市场对于Redfin有很高的期待，通过IPO之后股价的变动就可以体现，然而机遇与风险并存。Redfin使用地图，人工智能，云计算等技术来帮助房产搜索，降低行业运行成本。其中人工智能技术主要应用于房屋推荐（Redfin Listing Recommendations），房屋估价（Redfin Estimate）以及热门房屋预测（Redfin Hot Homes）。然而Redfin目前还没有实现盈利，并且于其他传统房产经纪公司一样会受到房产市场以及利率周期变化的影响。Redfin的业务目前集中于人口稠密地区，未来拓展其他市场存在一定的未知性。
+
+资料来源：
+[crunchbase](https://www.crunchbase.com/organization/redfin#/entity)
+[linkedin](https://www.linkedin.com/in/glennkelman/)
+[cnbc](https://www.cnbc.com/2017/07/28/redfin-ipo-rdfn-stock-opening-trade.html)
+[美国证监会](https://www.sec.gov/Archives/edgar/data/1382821/000119312517219877/d325499ds1.htm)
