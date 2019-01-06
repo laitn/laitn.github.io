@@ -20,7 +20,7 @@ permalink: /2019/01/03/xbox-one-titanfall-2.html
 
 {% include adsense-article1.html %}
 
-随机附赠的游戏是一款我十分钟爱的体育游戏 - NBA 2K19，但这里我首先尝试的游戏是一款2016年Respawn工作室出品的一款第一人称射击游戏 - 泰坦降临 2 （Titanfall 2）。之前有在PC上玩使命召唤(Call of Duty)，战地(Battlefield)的经历（年头有些久了，以至于不记得是哪一部），当年也被EA投放的泰坦降临的Youtube广告疯狂轰炸过，于是在下手XBox主机的同时就另外购买了Titanfall 2的实体游戏CD。趁这次年底放假，我也是有时间好好坐下来，好好享受并通关了泰坦降临2的单机任务。
+随机附赠的游戏是一款我十分钟爱的体育游戏 - NBA 2K19，但这里我首先尝试的游戏是一款2016年Respawn工作室出品的一款第一人称射击游戏 - 泰坦降临 2 （Titanfall 2[购买链接](https://www.amazon.com/Titanfall-2-Deluxe-Xbox-One/dp/B01GKGVI9Y)）。之前有在PC上玩使命召唤(Call of Duty)，战地(Battlefield)的经历（年头有些久了，以至于不记得是哪一部），当年也被EA投放的泰坦降临的Youtube广告疯狂轰炸过，于是在下手XBox主机的同时就另外购买了Titanfall 2的实体游戏CD。趁这次年底放假，我也是有时间好好坐下来，好好享受并通关了泰坦降临2的单机任务。
 
 ![meatongrill]({{ site.url }}/assets/titanfall2.jpg)
 
