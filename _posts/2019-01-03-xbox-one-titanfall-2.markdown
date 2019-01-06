@@ -6,7 +6,7 @@ categories:
 permalink: /2019/01/03/xbox-one-titanfall-2.html
 ---
 
-去年圣诞节XBox One S 1T Bundle达到了史上最低的175美元，再躲过了黑色星期五购物狂潮之后，我未能幸免终于入了XBox的坑。
+去年圣诞节XBox One S 1T Bundle[购买链接](https://www.amazon.com/Xbox-One-1TB-Console-Minecraft-Creators/dp/B07GX2XXT1/)达到了史上最低的175美元，再躲过了黑色星期五购物狂潮之后，我未能幸免终于入了XBox的坑。
 
 我的XBox One S是1T内存版本，附赠NBA 2k19的电子版，支持4K HDR流媒体播放。对标的PS4 Bundle在感恩节期间也降价到了199元，不知是PS供货量太少，还是Sony产品太过火爆，感恩节还没到就脱销，后来再也没有补货。标准版的PS4支持游戏4k HDR加持，这个功能需要XBox One X才可以支持，所以甚是可惜。而且PS4有些独占的单机游戏大作（God of War 战神，Uncharted 神秘海域，Last of Us 最后生还者等）在XBox上也玩不到。不过对于首次入坑console端游（小时候的红白机不算）的我，XBox是足够了，还可以省个几十块的银子。
 
