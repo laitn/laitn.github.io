@@ -10,7 +10,11 @@ permalink: /2019/01/03/xbox-one-titanfall-2.html
 
 我的XBox One S是1T内存版本，附赠NBA 2k19的电子版，支持4K HDR流媒体播放。对标的PS4 Bundle在感恩节期间也降价到了199元，不知是PS供货量太少，还是Sony产品太过火爆，感恩节还没到就脱销，后来再也没有补货。标准版的PS4支持游戏4k HDR加持，这个功能需要XBox One X才可以支持，所以甚是可惜。而且PS4有些独占的单机游戏大作（God of War 战神，Uncharted 神秘海域，Last of Us 最后生还者等）在XBox上也玩不到。不过对于首次入坑console端游（小时候的红白机不算）的我，XBox是足够了，还可以省个几十块的银子。
 
+![meatongrill]({{ site.url }}/assets/xbox_1_s_console.jpg)
+
 我的XBox是纯白色机身，配备一个无线手柄，一根电源线，一根hdmi数据线，以及两颗AA电池（手柄用），还有附赠游戏的注册码。安装十分简易，大家一看就懂。给XBox主机接上电源线，hdmi数据线连接上XBox主机以及显示器。打开手柄后盖，安装上两节配备的AA电池。安装完成。
+
+![meatongrill]({{ site.url }}/assets/xbox_1_s_controller.jpg)
 
 初始设置十分简单，点击手柄上按钮就可以自动配对。链接WIFI，登陆XBox账户。第一次开机一般需要更新系统，需要花费一定的时间。更新过后就进入XBox的主界面。主界面被分成5个tab，最主要的就是第一个tab-游戏选择主界面，其他四个tab可以忽略（mixer，社区，应用游戏商店等）。按动手柄的XBox按钮可以随时呼唤出用户菜单，通过用户菜单可以跳转到任意的功能（主界面，设置，应用列表，聊天等）。总的UI/UX设计还是令人十分满意的，毕竟是软件巨头微软的亲儿子，软件设计开发商真的没得说。
 
