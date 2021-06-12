@@ -12,7 +12,7 @@ permalink: /2021/06/14/robo-advisor.html
 
 市面上有哪几家智能理财app呢？在美国这边，比较有名的是[Wealthfront](https://www.wealthfront.com/c/affiliates/invited/AFFD-56YQ-0RCB-73OX)以及[Charles Schwab Intelligent portfolio](http://www.schwab.com/public/schwab/nn/refer-prospect.html?refrid=REFERHM6AC7B7)。两家用户体验都是非常优秀啦。下载app直接可以开户，存入资金之后app会自动帮你投资，完全不需要任何人工投资操作。这两家的投资最低限额是0，也就是说如果你只有一元钱，理论上也是可以开户的。Wealthfront要收取0.25%管理费，比如你存入了1000块，那么每年它会收取你2.5块作为帮你投资的费用。而Charles Schwab目前来说是完全免费的。
 
-那么智能理财app理财收益到底如何呢？之前说过，智能理财app的投资主要是基金，而且主要是长线持有。那么美国几大指数基金就具有重要的参考。比如，每股风向标SPY指数基金在过去的一年内涨幅为38%。我个人的Wealthfront账户在2020年有13.24%的增长，然而2020年全年都受到疫情冲击，所以并不具有代表性。那么最近的且具有代表性的2019年增幅是24%，2021年前半年已经有14%的增幅。所以整体来说还是很令人满意的。
+那么智能理财app理财收益到底如何呢？之前说过，智能理财app的投资主要是基金，而且主要是长线持有。那么美国几大指数基金就具有重要的参考。比如，每股风向标SPY指数基金在过去的一年内涨幅为38%。我个人的Wealthfront账户在2020年有13.24%的增长，然而2020年全年都受到疫情冲击，所以并不具有代表性。那么最近的且具有代表性的2019年增幅是24%，2021年前半年已经有14%的增幅。我在Charles Schwab也有开户，方便比较两者的投资效率，算起来两者增幅差不多。所以整体来说智能理财app还是很令人满意的。
 
 ![meatongrill]({{ site.url }}/assets/spy-2021-06.png)
 
